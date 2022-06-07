@@ -5,6 +5,8 @@ background-size: cover;
 
 }
 
+
+
 .button_task {
   margin-left: 15%;
 }
@@ -16,12 +18,18 @@ header {
 
 h1 {
   margin-bottom: 10px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 h3 {
   margin-bottom: 10px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
   justify-content: end;
+}
+
+.card-title{
+    text-align: center;
 }
