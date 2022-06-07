@@ -16,32 +16,129 @@
 <link href="stylesheet.css" rel="stylesheet">
 
   </head>
+
   <body>
 
-    <div class="card" style="width: 18rem;">
+
+<header>
+  <h1>
+    <strong>Trelli</strong>
+  </h1>
+  <h3>
+    Task Planner
+  </h3>
+</header>
+  <!----------------starts of our grid--------------->
+  
+  <div class="container ">
+    <div class="row">
+      <div class="col-sm">
+
+    <div class="card" style="width: 18rem;" >
   <div class="card-body">
-    <h5 class="card-title">Task 1</h5>
-    <p class="card-text">Create a Form using Bootstrap</p>
-    <a href="#" class="btn btn-primary">Edit Task</a>
-    <a href="#" class="btn btn-primary">Delete Task</a>
+    <h5 class="card-title ">Task 1</h5>
+    
+    <!--Add a list in the card-->
+
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Task description
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Name</a></li>
+        <li><a class="dropdown-item" href="#">Description</a></li>
+        <li><a class="dropdown-item" href="#">Assignee</a></li>
+        <li><a class="dropdown-item" href="#">Due date</a></li>
+      </ul>
+    </div>
+
+    <!--end of the list within card-->
+
+    <br>
+    <a href="#" class="btn btn-warning">Edit Task</a>
+    <a href="#" class="btn btn-danger">Delete Task</a>
+  </div>
   </div>
 </div>
-<br>
-<br>
- <div class="card" style="width: 18rem;">
+
+
+
+<div class="col-sm">
+ <div class="card " style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Task 2</h5>
-    <p class="card-text">Create a Card using Bootstrap</p>
-    <a href="#" class="btn btn-primary">Edit Task</a>
-    <a href="#" class="btn btn-primary">Delete Task</a>
+    
+        <!--Add a list in the card-->
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Task description
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Name</a></li>
+            <li><a class="dropdown-item" href="#">Description</a></li>
+            <li><a class="dropdown-item" href="#">Assignee</a></li>
+            <li><a class="dropdown-item" href="#">Due date</a></li>
+          </ul>
+        </div>
+    
+        <!--end of the list within card-->
+<br>
+    <a href="#" class="btn btn-warning">Edit Task</a>
+    <a href="#" class="btn btn-danger">Delete Task</a>
+    </div>
+  </div>
+  </div>
+
+
+  <!--add third task------->
+
+  <div class="col-sm">
+
+    <div class="card " style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Task 3</h5>
+    
+    <!--Add a list in the card-->
+
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Task description
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Name</a></li>
+        <li><a class="dropdown-item" href="#">Description</a></li>
+        <li><a class="dropdown-item" href="#">Assignee</a></li>
+        <li><a class="dropdown-item" href="#">Due date</a></li>
+      </ul>
+    </div>
+
+    <!--end of the list within card-->
+
+    <br>
+    <a href="#" class="btn btn-warning">Edit Task</a>
+    <a href="#" class="btn btn-danger">Delete Task</a>
+  </div>
   </div>
 </div>
+
+
+  <!-------end of 3 task-->
+
+</div>
+
+</div>
+</div>
+
+<!----------------End of our grid--------------->
+
+
     <!-- Button trigger modal -->
     <br>
     <br>
     <button 
       type="button"
-      class="btn btn-primary"
+      class="btn btn-primary button_task col-8"
       data-bs-toggle="modal"
       data-bs-target="#exampleModal"
       
@@ -66,7 +163,7 @@
               class="btn-close"
               data-bs-dismiss="modal"
               aria-label="Close"
-            ></button>
+            >X</button>
           </div>
           <div class="modal-body">
             <form>
@@ -160,5 +257,6 @@
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
+  
   </body>
 </html>
