@@ -21,9 +21,12 @@
 
 
 <header>
+  <span id="dateObject"> </span>
   <h1>
     <strong>Trelli</strong>
+   
   </h1>
+ 
   <h3>
     Task Planner
   </h3>
@@ -296,8 +299,20 @@
           alert("Please indicate later date");
         }
       
-      
       }
+      
+     
+
+      function displayDate() {
+          let dateObject = document.getElementById('dateObject')
+          let currentDate = new Date();
+          let date = currentDate.getDate();
+          let month = currentDate.getMonth() + 1;
+          let year = currentDate.getFullYear();
+          document.getElementById('dateObject').innerHTML = date + "/" + month + "/" + year;      
+      }
+
+      console.log(displayDate());
       
           </script>
 

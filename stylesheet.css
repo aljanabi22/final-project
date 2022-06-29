@@ -1,6 +1,6 @@
 body {
   background-image: url("https://images.pexels.com/photos/11126333/pexels-photo-11126333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-background-size: cover;
+  background-size: cover;
 
 
 }
@@ -18,7 +18,7 @@ header {
 
 h1 {
   margin-bottom: 10px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h3 {
@@ -32,4 +32,14 @@ h3 {
 
 .card-title{
     text-align: center;
+}
+
+#dateObject {
+   font-size: 24px;
+   color: rgb(249, 248, 254);
+   float: right;
+   margin: 20px 0px 20px 0px;
+   font-weight: bold;
+
+
 }
