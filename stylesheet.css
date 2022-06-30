@@ -1,1 +1,47 @@
 
+body {
+  background-image: url("https://images.pexels.com/photos/11126333/pexels-photo-11126333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+
+
+}
+
+
+
+.button_task {
+  margin-left: 15%;
+}
+
+header {
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  justify-content: end;
+}
+
+.card-title{
+    text-align: center;
+}
+
+#dateObject {
+   font-size: 24px;
+   color: rgb(249, 248, 254);
+   float: right;
+   margin: 20px 0px 20px 0px;
+   font-weight: bold;
+
+
+}
+>>>>>>> d99b858229528814953fbb8a543e8c1e530f7b12
