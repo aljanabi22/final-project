@@ -21,35 +21,36 @@ function validateTaskForm(e) {
   console.log(date);
 
   let messages = [];
-  if (firstName.value.length <= 0) {
+  if (firstName.length <= 0) {
     messages.push("Please enter Name");
   }
 
-  if (firstName.value.length < 8) {
+  if (firstName.length < 8) {
     messages.push("Name must be at least 8 characters");
   }
 
-  if (description.value === "" || description.value == null) {
+  if (description === "" || description.value == null) {
     messages.push("Please enter a task description");
   }
 
-  if (description.value.length <= 15) {
+  if (description.length <= 15) {
     messages.push("Please have a longer description");
   }
 
-  if (assignedTo.value.length <= 0) {
+  if (assignedTo.length <= 0) {
     messages.push("Please fill the field");
   }
 
-  if (assignedTo.value.length < 8) {
+  if (assignedTo.length < 8) {
     messages.push("Please have a longer description");
   }
 
-  if (dueDate === currentDate) {
-    messages.push("Please indicate later date");
-  }
+  // if (dueDate === currentDate) {
+  // messages.push("Please indicate later date");
+  //}
 
   nameError.innerHTML = messages.join(`, `);
+  console.log(messages);
 }
 
 function displayDate() {
