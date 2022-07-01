@@ -1,23 +1,13 @@
-import TaskManager from './task.js';
-import {newTask} from './task'
-
 console.log(submitButton);
 
 // submitButton.addEventListener("click", stringLength);
 
 document.getElementById("taskForm").addEventListener("submit", (e) => {
-  e.preventDefault();
-  if (validateTaskForm().length === 0){
-    submitFunction();
-  }
-  else{
-    nameError.innerHTML = messages.join(`, `);
-  }
-  
+  validateTaskForm(e);
 });
 
-function validateTaskForm() {
-  
+function validateTaskForm(e) {
+  e.preventDefault();
 
   const firstName = document.getElementById("firstName").value;
   // const lastName = document.getElementById("lastName").value;
@@ -39,9 +29,9 @@ function validateTaskForm() {
     messages.push("Name must be at least 8 characters");
   }
 
-  // if (description === "" || description.value == null) {
-  //   messages.push("Please enter a task description");
-  // }
+  if (description === "" || description.value == null) {
+    messages.push("Please enter a task description");
+  }
 
   if (description.length <= 15) {
     messages.push("Please have a longer description");
@@ -59,8 +49,8 @@ function validateTaskForm() {
   // messages.push("Please indicate later date");
   //}
 
-  return messages;
-  //console.log(messages);
+  nameError.innerHTML = messages.join(`, `);
+  console.log(messages);
 }
 
 function displayDate() {
